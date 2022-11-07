@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>ITG</title>
+		<meta charset="UTF-8" />
+		<link href="assets/css/styles.css" rel="stylesheet" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+			integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+			crossorigin="anonymous"
+		/>
+		<!-- <script
+			src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"
+		></script> -->
+		<script
+			src="https://code.jquery.com/jquery-3.6.1.min.js"
+			integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+			crossorigin="anonymous"
+		></script>
+		<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+			integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+	</head>
+
+	<body>
+		<header>
+			<div class="row pre-header align-items-center mt-2 pl-2 pr-2">
+				<div class="col-4">
+					<a href="home.html"><img src="assets/imgs/logo.png" width="50" /></a>
+				</div>
+				<div class="col-4">
+					<img src="assets/imgs/location.png" class="mr-1" width="20" />
+					<span class="pre-header-titles">Puerto Rico Science, Technology, and Research Trust</span>
+				</div>
+				<div class="col-2">
+					<a href="tel:7877662405" style="text-decoration: none">
+						<img src="assets/imgs/phone.png" class="mr-1" width="25" />
+						<span class="pre-header-titles">(787) 766.2405</span>
+					</a>
+				</div>
+				<div class="col-2">
+					<a href="mailto:itgoperations@itg.online" style="text-decoration: none">
+						<img src="assets/imgs/at_sign.png" class="mr-1" width="25" />
+						<span class="pre-header-titles">itgoperations@itg.online</span>
+					</a>
+				</div>
+			</div>
+		</header>
+		<div>
+			<div
+				class="vh-75"
+				style="
+					background-image: url('assets/imgs/tablet_service.png');
+					background-size: 1550px;
+					background-repeat: no-repeat;
+					height: 600px;
+				"
+			>
+				<div class="blue-shade">
+					<div class="nav-grid">
+						<div class="nav-grid-child"></div>
+						<div class="nav-grid-child">
+							<a href="#">About Us</a>
+						</div>
+						<div class="nav-grid-child">
+							<a href="#">Subscriptions</a>
+						</div>
+						<div class="nav-grid-child">
+							<a href="#">Online Courses</a>
+						</div>
+						<div class="nav-grid-child">
+							<a href="#">Contact Us</a>
+						</div>
+						<div class="nav-grid-child">
+							<a href="#">
+								<img src="assets/imgs/Search.png" alt="" />
+							</a>
+						</div>
+					</div>
+					<div class="text-center">
+						<p class="title-text">Managed Services</p>
+					</div>
+				</div>
+			</div>
+			<div
+				class="h-100"
+				style="background: url('assets/imgs/contact_back.png'); background-size: cover"
+			>
+				<div class="contact-section">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col text-center">
+								<h1>Contact Us</h1>
+								<p class="contact-subtext mt-4">
+									We’d love to hear from you. Please fill out this form.
+								</p>
+							</div>
+						</div>
+						<div class="row justify-content-center">
+							<div class="col-6">
+								<form method="post" id="contactForm">
+									<div class="form-group">
+										<label for="first_name">First name</label>
+										<input
+											class="form-control"
+											placeholder="First name"
+											type="text"
+											name="first_name"
+											id="first_name"
+										/>
+									</div>
+									<div class="form-group">
+										<label for="last_name">Last name</label>
+										<input
+											class="form-control"
+											placeholder="Last name"
+											type="text"
+											name="last_name"
+											id="last_name"
+										/>
+									</div>
+									<div class="form-group">
+										<label for="email">Email</label>
+										<input
+											class="form-control"
+											placeholder="you@company.com"
+											type="email"
+											name="email"
+											id="email"
+										/>
+									</div>
+									<div class="form-group">
+										<label for="company">Company</label>
+										<input
+											class="form-control"
+											placeholder="Interactive Technology Corp"
+											type="text"
+											name="company"
+											id="company"
+										/>
+									</div>
+									<div class="form-group">
+										<label for="phone_number">Phone number</label>
+										<input
+											class="form-control"
+											placeholder="+1 (555) 000-0000"
+											type="tel"
+											name="phone_number"
+											id="phone_number"
+										/>
+									</div>
+									<div class="form-group">
+										<label for="message">Message</label>
+										<textarea
+											class="form-control contact-message"
+											placeholder="Include a message..."
+											type="text"
+											name="message"
+											id="message"
+											rows="5"
+										></textarea>
+									</div>
+									<div class="text-center">
+										<button class="btn contact-btn" onclick="sendBSform221011();">
+											Send Message
+										</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

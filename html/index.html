@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>ITG</title>
+		<meta charset="UTF-8" />
+		<link href="assets/css/stylesR.css" rel="stylesheet" />
+		<link href="assets/css/about.css" rel="stylesheet" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+			integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+			crossorigin="anonymous"
+		></script>
+		<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+			integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+
+		<script type="text/javascript">
+			$('.carousel').carousel({ interval: false });
+
+			function changeServiceCard(id) {
+				let cards = document.getElementsByClassName('dynamic-card');
+				for (let card of cards) {
+					card.classList.add('inactive-card');
+				}
+				console.log(cards);
+				let newActiveCard = document.getElementById(id);
+				newActiveCard.classList.remove('inactive-card');
+				console.log(newActiveCard);
+			}
+		</script>
+	</head>
+
+	<body>
+		<header>
+			<div class="row pre-header align-items-center mt-2 pl-2 pr-2">
+				<div class="col-4">
+					<a href="home.html"><img src="assets/imgs/logo.png" width="50" /></a>
+				</div>
+				<div class="col-4">
+					<img src="assets/imgs/location.png" class="mr-1" width="20" />
+					<span class="pre-header-titles">Puerto Rico Science, Technology, and Research Trust</span>
+				</div>
+				<div class="col-2">
+					<a href="tel:7877662405" style="text-decoration: none">
+						<img src="assets/imgs/phone.png" class="mr-1" width="25" />
+						<span class="pre-header-titles">(787) 766.2405</span>
+					</a>
+				</div>
+				<div class="col-2">
+					<a href="mailto:itgoperations@itg.online" style="text-decoration: none">
+						<img src="assets/imgs/at_sign.png" class="mr-1" width="25" />
+						<span class="pre-header-titles">itgoperations@itg.online</span>
+					</a>
+				</div>
+			</div>
+		</header>
+		<div id="itg-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+			<div class="carousel-inner vh-100">
+				<div
+					class="carousel-item h-100 active"
+					style="background: url('assets/imgs/carousel1.png'); background-size: cover"
+				>
+					<div class="shade d-flex align-items-center">
+						<div class="container h-50">
+							<div class="row">
+								<div class="col-8">
+									<h1 class="banner-title">Interactive Technology Group</h1>
+									<span>
+										<h3 class="pipe-text">
+											Begin Your Digital Transformation With The Right Technical Tools, Services And
+											Skills
+										</h3>
+									</span>
+									<a onClick="alert('btn clicked')">
+										<button type="button" class="banner-action">Discover More</button>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div
+					class="carousel-item h-100"
+					style="background: url('assets/imgs/carousel2.png'); background-size: cover"
+				>
+					<div class="shade d-flex align-items-center">
+						<div class="container h-35">
+							<div class="row">
+								<div class="col-8">
+									<h1 class="banner-title">Courses Calendar</h1>
+									<span>
+										<h3 class="pipe-text">
+											Begin Your Digital Transformation With The Right Technical Tools, Services And
+											Skills
+										</h3>
+									</span>
+									<a onClick="alert('btn clicked')">
+										<button type="button" class="banner-action">Discover More</button>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div
+					class="carousel-item h-100"
+					style="background: url('assets/imgs/carousel3.png'); background-size: cover"
+				>
+					<div class="shade d-flex align-items-center">
+						<div class="container h-35">
+							<div class="row">
+								<div class="col-8">
+									<h1 class="banner-title">Blockskill</h1>
+									<span>
+										<h3 class="pipe-text">
+											Begin Your Digital Transformation With The Right Technical Tools, Services And
+											Skills
+										</h3>
+									</span>
+									<a onClick="alert('btn clicked')">
+										<button type="button" class="banner-action">Discover More</button>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div
+					class="carousel-item h-100"
+					style="background: url('assets/imgs/carousel4.png'); background-size: cover"
+				>
+					<div class="shade d-flex align-items-center">
+						<div class="container h-35">
+							<div class="row">
+								<div class="col-8">
+									<h1 class="banner-title">Offers</h1>
+									<span>
+										<h3 class="pipe-text">
+											Begin Your Digital Transformation With The Right Technical Tools, Services And
+											Skills
+										</h3>
+									</span>
+									<a onClick="alert('btn clicked')">
+										<button type="button" class="banner-action">Discover More</button>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div
+					class="carousel-item h-100"
+					style="background: url('assets/imgs/carousel5.png'); background-size: cover"
+				>
+					<div class="shade d-flex align-items-center">
+						<div class="container h-35">
+							<div class="row">
+								<div class="col-8">
+									<h1 class="banner-title">Appointments</h1>
+									<span>
+										<h3 class="pipe-text">
+											Begin Your Digital Transformation With The Right Technical Tools, Services And
+											Skills
+										</h3>
+									</span>
+									<a onClick="alert('btn clicked')">
+										<button type="button" class="banner-action">Discover More</button>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<a class="carousel-control-prev" href="#itg-carousel" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#itg-carousel" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+
+
+		<!--services-->
+
+
+		<div class="services ">
+			<div class="container">
+				<div class="row">
+					<div class="col-4"></div>
+					<div class="col-6 mt-5">
+						<h1 style="color: #0078d4; margin-left: -3rem">One Stop Many Solutions...</h1>
+					</div>
+					<div class="col-2">
+						<img src="assets/imgs/msoft-partner.png" alt="microsoft partner badge" />
+					</div>
+				</div>
+				<div class="row">
+					<div class="col" style="display: grid; justify-items: center; justify-content: center">
+						<div class="services-button-group">
+							<div>
+								<a>
+									<button type="button" class="btn font-weight-bold licensing-button"
+										onClick="changeServiceCard('licensing')">
+										LICENSING
+										<img src="assets/imgs/Licence.png" />
+									</button>
+								</a>
+							</div>
+							<div>
+								<a>
+									<button type="button" class="btn font-weight-bold certification-button"
+										onClick="changeServiceCard('tech-skills')">
+										TECHNICAL SKILLING & CERTIFICATIONS
+										<img src="assets/imgs/Classroom.png" />
+									</button>
+								</a>
+							</div>
+							<div>
+								<a>
+									<button type="button" class="btn font-weight-bold innovation-button"
+										onClick="changeServiceCard('app-modernization')">
+										APP MODERNIZATION & INNOVATION
+										<img src="assets/imgs/Code.png" />
+									</button>
+								</a>
+							</div>
+							<div>
+								<a>
+									<button type="button" class="btn font-weight-bold managed-button"
+										onClick="changeServiceCard('managed-services')">
+										MANAGED SERVICES
+										<img src="assets/imgs/gears.png" />
+									</button>
+								</a>
+							</div>
+							<div>
+								<a>
+									<button type="button" class="btn font-weight-bold security-button"
+										onClick="changeServiceCard('security')">
+										SECURITY ASSESMENTS
+										<img src="assets/imgs/Secure_Cloud.png" />
+									</button>
+								</a>
+							</div>
+							<div>
+								<a>
+									<button type="button" class="btn font-weight-bold job-button"
+										onClick="changeServiceCard('job-placement')">
+										JOB PLACEMENT
+										<img src="assets/imgs/Job_Seeker.png" />
+									</button>
+								</a>
+							</div>
+							<img src="assets/imgs/our-services-fork.png" alt="" width="450" height="auto" />
+							<div id="licensing" class="card dynamic-card">
+								<div class="card-body text-center">
+									<img src="assets/imgs/Licence.png" />
+									<h3 class="card-title">Licensing</h3>
+									<div>
+										<ul class="card-list licensing-list">
+											<li>
+												Consulting on organization-wide licensing strategies for Microsoft technologies
+											</li>
+											<li>
+												Selling Microsoft lucensing under the Open and CSP programs for clients in the
+												Educatio, SMB and corporate sectors
+											</li>
+										</ul>
+									</div>
+									<button type="button" class="btn btn-primary carousel-btn">Learn More</button>
+								</div>
+							</div>
+							<div id="tech-skills" class="card dynamic-card inactive-card">
+								<div class="card-body text-center">
+									<img src="assets/imgs/Classroom.png" />
+									<h3 class="card-title">Technical Skilling & Certifications</h3>
+									<div>
+										<ul class="card-list tech-list">
+											<li>Delivery of Official Coursewear</li>
+											<li>Certification & Exam Preps</li>
+											<li>Technical Company Skilling Plans</li>
+											<li>Customer & Learner Experience Portal</li>
+											<li>Blockskill LMS</li>
+											<li>Microsoft Enterprise Skilling Initiative (ESI)</li>
+										</ul>
+									</div>
+									<button type="button" class="btn btn-primary carousel-btn">Learn More</button>
+								</div>
+							</div>
+							<div id="app-modernization" class="card dynamic-card inactive-card">
+								<div class="card-body text-center">
+									<img src="assets/imgs/Code.png" />
+									<h3 class="card-title">App Modernization & Innovation</h3>
+									<div>
+										<ul class="card-list app-list">
+											<li>BlockSkill LMS, CMS and EMS</li>
+											<li>Consulting, planning, design, testing, integration, and support for custom Web Applications and Microsoft Power Platform</li>
+											<li>Azure database consulting, design, testing, migration, development, analysis, reporting and integration</li>
+										</ul>
+									</div>
+									<button type="button" class="btn btn-primary carousel-btn">Learn More</button>
+								</div>
+							</div>
+							<div id="managed-services" class="card dynamic-card inactive-card">
+								<div class="card-body text-center">
+									<img src="assets/imgs/gears.png" />
+									<h3 class="card-title">Managed Services</h3>
+									<div>
+										<ul class="card-list managed-list">
+											<li>Azure hosting services</li>
+											<li>Azure storage solutions</li>
+											<li>Infrastructure Architecture Design</li>
+											<li>Infrastructure monitoring and analytics</li>
+											<li>Infrastructure enhancement</li>
+											<li>Help desk and troubleshooting</li>
+										</ul>
+									</div>
+									<button type="button" class="btn btn-primary carousel-btn">Learn More</button>
+								</div>
+							</div>
+							<div id="security" class="card dynamic-card inactive-card">
+								<div class="card-body text-center">
+									<img src="assets/imgs/Secure_Cloud.png" />
+									<h3 class="card-title">Security Assesments</h3>
+									<div>
+										<ul class="card-list security-list">
+											<li>Microsoft 365 and Azure Security Assessments</li>
+											<li>Implementation on Microsoft 365</li>
+											<li>Defender, Defender for Endpoint, Azure Sentinel, Identity and access management, Identity Governance and Microsoft Purview</li>
+										</ul>
+									</div>
+									<button type="button" class="btn btn-primary carousel-btn">Learn More</button>
+								</div>
+							</div>
+							<div id="job-placement" class="card dynamic-card inactive-card">
+								<div class="card-body text-center">
+									<img src="assets/imgs/Job_Seeker.png" />
+									<h3 class="card-title">Job Placement</h3>
+									<div>
+										<ul class="card-list job-list">
+											<li>Candidate interviewing</li>
+											<li>Identification of knowledge gaps with recommendations on remediation strategies</li>
+											<li>Placement of qualified candidates with suitable employers</li>
+										</ul>
+									</div>
+									<button type="button" class="btn btn-primary carousel-btn">Learn More</button>
+								</div>
+						</div>
+					</div>
+				</div>
+				<div class="row text-center text-secondary">
+					<h5>
+						As a Digital Transformation Services and Solutions Provider, Interactive Technology
+						Group (ITG), offers a variety of integrated emerging technologies for the SMB, Corporate
+						& Enterprise industries segments. For more than ten (10) years, ITG has provided
+						customers with a positive experience and the level of technological competence and
+						efficiency necessary to shape the global workforce.
+					</h5>
+				</div>
+			</div>
+		</div>
+
+</div>
+
+	<!--end services-->
+
+
+
+		<div class="meetourteam">
+			<div class="container">
+				<h2 class="text-center">Meet Our Team</h2>
+				<div class="row mt-5">
+					<div class="col-xs-12 col-sm-12 col-lg-6">
+						<img src="assets/imgs/goal.png" class="meetourteam-icon" width="40" />
+						<h4 class="meetourteam-title">Our Vision</h4>
+						<div class="meetourteam-description">
+							Our vision is to become the first alternative in IT training and development services
+							that meet the needs of learners and customers through the development of technical
+							occupational skills and the creation of online tools geared towards helping them
+							overcome the barriers that make it difficult to achieve both professional and company
+							goals.
+						</div>
+						<img src="assets/imgs/mission.png" class="meetourteam-icon" width="40" />
+						<h4 class="meetourteam-title">Our Mission</h4>
+						<div class="meetourteam-description">
+							Our mission is to provide the professionalism, commitment, and enthusiasm necessary to
+							assist learners and customers in the process of developing and improving their
+							technical proficiency through the adoption of innovative training and development
+							services that positively affect the achievement of efficiency and self-sufficiency.
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-lg-6">
+						<!--Carousel-->
+						<div class="container">
+							<div class="row">
+								<div class="col-12">
+									<div id="carouselMeetOurTeam" class="carousel slide" data-ride="carousel">
+										<div class="carousel-inner">
+											<div class="carousel-item active">
+												<div class="row">
+													<div class="col">
+														<div class="card d-block text-center">
+															<img
+																class="img-fluid"
+																alt="100%x280"
+																src="assets/imgs/kahlil.png"
+																width="220"
+															/>
+
+															<div class="card-body text-center">
+																<h4 class="card-title">Kahlil Mendez</h4>
+																<p class="card-text">General Manager</p>
+																<button type="button" class="btn btn-primary carousel-btn">
+																	Contact
+																</button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="carousel-item">
+												<div class="row">
+													<div class="col">
+														<div class="card d-block text-center">
+															<img
+																class="img-fluid"
+																alt="100%x280"
+																src="assets/imgs/karlo.png"
+																width="220"
+															/>
+
+															<div class="card-body text-center">
+																<h4 class="card-title">Karlo Rodriguez</h4>
+																<p class="card-text">Operations Manager</p>
+																<button type="button" class="btn btn-primary carousel-btn">
+																	Contact
+																</button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="carousel-item">
+												<div class="row">
+													<div class="col">
+														<div class="card d-block text-center">
+															<img
+																class="img-fluid"
+																alt="100%x280"
+																src="assets/imgs/puggi.png"
+																width="220"
+															/>
+
+															<div class="card-body text-center">
+																<h4 class="card-title">Puggi Vazquez</h4>
+																<p class="card-text">Technical Account Manager</p>
+																<button type="button" class="btn btn-primary carousel-btn">
+																	Contact
+																</button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="carousel-item">
+												<div class="row">
+													<div class="col">
+														<div class="card d-block text-center">
+															<img
+																class="img-fluid"
+																alt="100%x280"
+																src="assets/imgs/blanca.png"
+																width="220"
+															/>
+
+															<div class="card-body text-center">
+																<h4 class="card-title">Blanca Aquino</h4>
+																<p class="card-text">Business Developer Manager</p>
+																<button type="button" class="btn btn-primary carousel-btn">
+																	Contact
+																</button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="carousel-item">
+												<div class="row">
+													<div class="col">
+														<div class="card d-block text-center">
+															<img
+																class="img-fluid"
+																alt="100%x280"
+																src="assets/imgs/nilsa.png"
+																width="220"
+															/>
+
+															<div class="card-body text-center">
+																<h4 class="card-title">Nilsa Santiago</h4>
+																<p class="card-text">Business Analitics & CPA</p>
+																<button type="button" class="btn btn-primary carousel-btn">
+																	Contact
+																</button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="carousel-item">
+												<div class="row">
+													<div class="col">
+														<div class="card d-block text-center">
+															<img
+																class="img-fluid"
+																alt="100%x280"
+																src="assets/imgs/daniela.png"
+																width="220"
+															/>
+
+															<div class="card-body text-center">
+																<h4 class="card-title">Daniela Perez</h4>
+																<p class="card-text">Proctor & Instructor Lead</p>
+																<button type="button" class="btn btn-primary carousel-btn">
+																	Contact
+																</button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<!--Controls-->
+										<div class="d-flex justify-content-center">
+											<a
+												class="mr-3 arrow"
+												href="#carouselMeetOurTeam"
+												role="button"
+												data-slide="prev"
+											>
+												<i class="fa fa-arrow-left"></i>
+											</a>
+											<!--Indicators-->
+											<ol class="carousel-indicators">
+												<li
+													data-target="#carouselMeetOurTeam"
+													data-slide-to="0"
+													class="active"
+												></li>
+												<li data-target="#carouselMeetOurTeam" data-slide-to="1"></li>
+												<li data-target="#carouselMeetOurTeam" data-slide-to="2"></li>
+												<li data-target="#carouselMeetOurTeam" data-slide-to="3"></li>
+												<li data-target="#carouselMeetOurTeam" data-slide-to="4"></li>
+												<li data-target="#carouselMeetOurTeam" data-slide-to="5"></li>
+											</ol>
+											<a
+												class="ml-3 arrow"
+												href="#carouselMeetOurTeam"
+												role="button"
+												data-slide="next"
+											>
+												<i class="fa fa-arrow-right"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row text-center mt-4">
+								<div class="col"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row mt-5">
+					<div class="col">
+						<h3 class="meetourteam-title-qty">300+</h3>
+						<div class="meetourteam-subtitle-qty">CUSTOMERS SERVED</div>
+					</div>
+					<div class="col">
+						<h3 class="meetourteam-title-qty">10,000+</h3>
+						<div class="meetourteam-subtitle-qty">LEARNERS SERVED</div>
+					</div>
+					<div class="col">
+						<h3 class="meetourteam-title-qty">5000+</h3>
+						<div class="meetourteam-subtitle-qty">SKILLING SESSIONS</div>
+					</div>
+					<div class="col">
+						<h5 class="meetourteam-title-qty">6 (PR, DO, CR, US, PA, CO)</h5>
+						<div class="meetourteam-subtitle-qty">COUNTRIES SERVED</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
+<script type="text/javascript">
+	$('.carousel').carousel({ interval: false });
+</script>
