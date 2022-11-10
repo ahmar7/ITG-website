@@ -1,0 +1,77 @@
+.meetourteam-title {
+    color: #000;
+}
+
+.meetourteam-description {
+    color: #8c8d90;
+}
+
+.meetourteam-icon {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.meetourteam {
+    padding: 60px 10px;
+    background-color: #eaeaea;
+}
+
+.meetourteam-title-qty {
+    color: #505256;
+}
+
+.meetourteam-subtitle-qty {
+    color: #2a87c8;
+}
+
+.card {
+    border-top-left-radius: 80px !important;
+    border-top-right-radius: 80px !important;
+    border-bottom-left-radius: 80px !important;
+    border-bottom-right-radius: 80px !important;
+    padding: 10px;
+    width: 70%;
+    margin: 0 auto !important;
+    margin-bottom: 20px !important;
+}
+
+.carousel-inner .active {
+    border-bottom: 0px;
+}
+
+.carousel-indicators li {
+    background-color: #404040 !important;
+    width: 12px !important;
+    height: 12px !important;
+    border-radius: 50% !important;
+}
+
+.carousel-btn {
+    border-top-left-radius: 80px !important;
+    border-top-right-radius: 80px !important;
+    border-bottom-left-radius: 80px !important;
+    border-bottom-right-radius: 80px !important;
+    padding: 5px 20px !important;
+    margin-bottom: 15px !important;
+}
+
+.arrow {
+    text-decoration: none !important;
+    font-size: 20px;
+}
+
+.carousel-indicators {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+    position: relative !important;
+}
+
+.carousel-indicators .active {
+    margin-top: -2px;
+    width: 15px !important;
+    height: 15px !important;
+}
+
+.carousel-item {
+    padding: 0 3rem;
+}
